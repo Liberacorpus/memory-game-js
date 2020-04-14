@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    border: 4px solid white;
+}
+
+@media (orientation: portrait) {
+    div {
+        flex-basis: 30%;
+        height: 16.66vh;
+    }
+}
+
+.chick {
+    /* background-color: red; */
+    background-image: url(img/chick.jpg);
+}
+
+.rabbit {
+    /* background-color: blue; */
+    background-image: url(img/rabbit.jpg);
+}
+
+.dogs {
+    /* background-color: green; */
+    background-image: url(img/dogs.jpg);
+}
+
+.easterEggs {
+    /* background-color: brown; */
+    background-image: url(img/easter_eggs.jpg);
+}
+
+.easter {
+    /* background-color: yellow; */
+    background-image: url(img/easter.jpg);
+}
+
+.flowers {
+    /* background-color: gray; */
+    background-image: url(img/flowers.jpg);
+}
+
+.moon {
+    /* background-color: lightgreen; */
+    background-image: url(img/moon.jpg);
+}
+
+.tree {
+    /* background-color: cadetblue; */
+    background-image: url(img/tree.jpg);
+}
+
+.eggs {
+    /* background-color: violet; */
+    background-image: url(img/eggs.jpg);
+}
+
+
+/* Kalsy po wyłączeniu danego elementu */
+.off {
+    background-image: linear-gradient(-45deg, rgb(200, 200, 200)50%, rgb(220, 220, 220)100%);
+}
+
+.hidden {
+    background-image: linear-gradient(90deg, black, rgb(10, 10, 10) 50%, black 100%);
+}
+
+.chick,
+.rabbit,
+.dogs,
+.easterEggs,
+.easter,
+.flowers,
+.tree,
+.eggs {
+    background-position: center;
+    background-size: cover;
+}
