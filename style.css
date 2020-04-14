@@ -85,7 +85,8 @@ div {
 .easter,
 .flowers,
 .tree,
-.eggs {
+.eggs,
+.moon{
     background-position: center;
     background-size: cover;
 }
